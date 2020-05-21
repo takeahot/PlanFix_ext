@@ -1,0 +1,35 @@
+{
+    "background": {
+        "scripts": [ "js/jquery.min.js","js/bg.js" ]
+    },
+    //"browser_action": {
+    //    "default_icon": "img/icon_reload_19.png",
+    //    "default_popup": "popup.html"
+    //},
+    "page_action": {
+        "default_icon": {                    // optional
+            "16": "img/16/icon16.png",           // optional
+            "24": "img/24/icon24.png",           // optional
+            "32": "img/32/icon32.png",            // optional
+            "48": "img/48/icon48.png",
+            "128": "img/128/icon128.png"
+        },
+        "default_title": "PlanFix_helper",      // optional; shown in tooltip
+        "default_popup": "popup.html"        // optional
+    },
+    "options_page": "settings.html",
+    "name": "PlanFix create bulk tasks",
+    "description": "Create conference call task by several click",
+    "icons": {
+        "16": "img/16/icon16.png",           // optional
+        "24": "img/24/icon24.png",           // optional
+        "32": "img/32/icon32.png",            // optional
+        "48": "img/48/icon48.png",
+        "128": "img/128/icon128.png"
+   },
+    //"web_accessible_resources": ["beep.wav"],
+    //"content_security_policy": "script-src 'self' https://platform.twitter.com https://connect.facebook.net; object-src 'self'",
+    "manifest_version": 2,
+    "permissions": ["declarativeContent","https://apiru.planfix.ru/xml/*"],
+    "version": "0"
+}
